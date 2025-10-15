@@ -22,6 +22,7 @@ let index2 = 5;
 // let sliced = nums.slice(2, 5);
 let sliced = nums.slice(index1, index2);
 console.log(sliced);
+console.log(nums);
 
 // let loggedIN= false;
 // const login(){
