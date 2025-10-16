@@ -73,6 +73,8 @@ console.log(newNums)
 // ==================
 
 // 11) Finnðu fyrsta notanda > 25 ára í users með .find().
+let fyrsti_not= users.find(user => user.age >25)
+console.log(fyrsti_not)
 
 // 12) Úr users: búðu til array af nöfnum með .map() og destructuring
 //     í callback: ({ name }) => name.
