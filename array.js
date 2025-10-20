@@ -59,6 +59,11 @@ let even = numbers.filter((n) => n % 2 === 0);
 console.log(even);
 let sum = numbers.reduce((sum, numbers) => sum + numbers);
 console.log(sum);
+
+function multiply(num) {
+  hlhl;
+}
+
 // constmultiply(numbers){
 // for(let i=0, i<numbers.length;i++){ numbers[i]*2}
 // return numbers

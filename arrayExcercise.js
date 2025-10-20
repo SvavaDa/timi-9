@@ -5,12 +5,12 @@
 
 // ====== Grunn-gögn sem má nota í æfingum (valfrjálst) ======
 const nums = [3, 7, 1, 9, 4];
-const colors = ['red', 'green', 'blue', 'green'];
-const user = { name: 'Anna', age: 25, city: 'Reykjavík' };
+const colors = ["red", "green", "blue", "green"];
+const user = { name: "Anna", age: 25, city: "Reykjavík" };
 const users = [
-  { name: 'Jon', age: 30, scores: [7, 9, 8] },
-  { name: 'Sara', age: 22, scores: [10, 9, 9] },
-  { name: 'Aron', age: 27, scores: [6, 7, 7] },
+  { name: "Jon", age: 30, scores: [7, 9, 8] },
+  { name: "Sara", age: 22, scores: [10, 9, 9] },
+  { name: "Aron", age: 27, scores: [6, 7, 7] },
 ];
 
 // ===============
@@ -20,61 +20,59 @@ const users = [
 // 1) Bættu tölunni 5 aftan við nums með .push()
 //    og loggaðu lengdina (length).
 
-nums.push(5)
-console.log(nums)
-console.log(nums.length)
-
+nums.push(5);
+console.log(nums);
+console.log(nums.length);
 
 // 2) Fjarlægðu síðasta litinn í colors með .pop()
 //    og loggaðu nýja listann.
 
-nums.pop(6)
-console.log(nums)
+nums.pop(6);
+console.log(nums);
 
 // 3) Bættu "yellow" fremst í colors með .unshift().
-colors.unshift("yellow")
-console.log(colors)
+colors.unshift("yellow");
+console.log(colors);
 
 // 4) Er "blue" í colors? Notaðu .includes() og loggaðu true/false.
 
-console.log(colors.includes("blue"))
+console.log(colors.includes("blue"));
 
 // 5) Finndu index af "green" með .indexOf().
-console.log(colors.indexOf("green"))
+console.log(colors.indexOf("green"));
 
 // 6) Búðu til object person með properties name og hobby
 //    og loggaðu bæði með dot-notation.
 
-let person={name:"Sigga",hobby:"dans"}
+let person = { name: "Sigga", hobby: "dans" };
 
-console.log(person.name)
-console.log(person.hobby)
+console.log(person.name);
+console.log(person.hobby);
 
 // 7) Object destructuring: Dragðu name og city úr user
 //    og prentaðu "Anna býr í Reykjavík".
-console.log(user.name," býr í ",user.city)
-
+console.log(user.name, " býr í ", user.city);
 
 // 8) Array destructuring: Dragðu fyrstu tvær tölur úr nums í breytur a og b
 //    og prentaðu summu þeirra.
 
-let a=nums[0]
-let b=nums[1]
-console.log(a+b)
+let a = nums[0];
+let b = nums[1];
+console.log(a + b);
 
 // 9) Búðu til nýtt array doubleNums sem er nums * 2 með .map().
 let doubleNums = nums.map((n) => n * 2);
-console.log(doubleNums)
+console.log(doubleNums);
 // 10) Síaðu aðeins tölur > 5 úr nums í newNums með .filter().
 let newNums = nums.filter((n) => n > 5);
-console.log(newNums)
+console.log(newNums);
 // ==================
 // 🟡 2. Þrep
 // ==================
 
 // 11) Finnðu fyrsta notanda > 25 ára í users með .find().
-let fyrsti_not= users.find(user => user.age >25)
-console.log(fyrsti_not)
+let fyrsti_not = users.find((user) => user.age > 25);
+console.log(fyrsti_not);
 
 // 12) Úr users: búðu til array af nöfnum með .map() og destructuring
 //     í callback: ({ name }) => name.
